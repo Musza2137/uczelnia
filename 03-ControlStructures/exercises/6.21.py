@@ -1,0 +1,15 @@
+###
+# Shows any amount in PLN with as few coins (5, 2, 1 PLN) as possible
+#
+amount = int(input("Enter the amount in PLN: "))
+
+coins_5 = amount // 5
+remainder = amount % 5
+
+coins_2 = remainder // 2
+coins_1 = remainder % 2
+
+print(f"The amount of PLN {amount} in coins:")
+print(f"5 PLN coins: {coins_5}")
+print(f"2 PLN coins: {coins_2}")
+print(f"1 PLN coins: {coins_1}")
